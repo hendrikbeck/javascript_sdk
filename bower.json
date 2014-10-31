@@ -1,0 +1,10 @@
+{
+  "name": "murm.io-js-sdk",
+  "version": "0.0.1",
+  "main": "lib/javascript-sdk2.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jquery": "~1.11.1"
+  }
+}
