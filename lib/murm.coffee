@@ -15,12 +15,16 @@
       beforeSend: (xhr) ->
         xhr.setRequestHeader("Authorization", 'Token "' + _authToken + '"')
 
-  submit: (score, text, user, transaction) =>
+  submit: (score, text, user, transaction, survey_ref, email, object, know_from) =>
     xhrArguments = {
       ref_id: @_ref_id,
+      survey_ref: survey_ref,
       score:  score,
       text: text,
       user:  user,
+      email: email,
+      object: object,
+      know_from: know_from,
       transaction: transaction,
       analytics: collectAnalytics(),
       sdk: {
@@ -41,7 +45,6 @@
 
 
 collectAnalytics = () ->
-  # TODO: add window.location to Analytics context
   browser = window.navigator.userAgent
   os = window.navigator.platform
   screen_width = window.screen.width

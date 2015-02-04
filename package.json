@@ -1,6 +1,6 @@
 {
   "name": "javascript-sdk",
-  "version": "0.0.0",
+  "version": "0.0.3",
   "main": "lib/javascript-sdk2.js",
   "description": "Javascript SDK to send customer feedback to the murm.io API.",
   

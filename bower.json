@@ -1,6 +1,6 @@
 {
   "name": "murm.io-js-sdk",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "main": "lib/javascript-sdk2.js",
   "license": "MIT",
   "private": true,

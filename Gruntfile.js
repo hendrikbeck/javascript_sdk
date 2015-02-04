@@ -50,11 +50,11 @@ module.exports = function(grunt) {
       coffee: {
           compile: {
               files: {
-                  'lib/javascript-sdk.js': ['lib/*.coffee']
+                  'dist/javascript-sdk.js': ['lib/*.coffee']
               }
           }
       }
-  })
+  });
 
   // Default task.
   grunt.registerTask('default', ['jshint', 'mochacli', 'coffee']);
